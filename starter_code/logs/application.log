@@ -1,0 +1,7 @@
+2023-10-04 23:56:50.300 ERROR 38526 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Error - Either length is less than 7 or pass and conf pass do not match. Unable to create
+2023-10-04 23:57:17.571 ERROR 38526 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : Error - Either length is less than 7 or pass and conf pass do not match. Unable to create
+2023-10-04 23:57:34.391  INFO 38526 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : hieutt was successfully created
+2023-10-04 23:57:51,243 ERROR o.h.e.j.s.SqlExceptionHelper [http-nio-8080-exec-7] Unique index or primary key violation: "PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 1"; SQL statement:
+2023-10-04 23:57:51.251 ERROR 38526 --- [nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_SB8BBOUER5WAK8VYIIY4PF2BX_INDEX_2 ON PUBLIC.USER(USERNAME) VALUES 1"; SQL statement:
+insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+2023-10-04 23:59:10.791  INFO 38526 --- [nio-8080-exec-2] c.e.demo.controllers.OrderController     : Order was successfully created
